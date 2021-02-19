@@ -1,2 +1,2 @@
 ATTENZIONE:
-QUESTO GIOCO NON ANCORA FUNZIONA
+Questo gioco è ancora in sviluppo
