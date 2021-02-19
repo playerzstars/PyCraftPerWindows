@@ -5,6 +5,9 @@ import tkinter as tk
 #from PIL import ImageTk, Image
 import os
 
+# Check for updates
+os.system("git pull")
+
 # Import settings data
 import settingsData
 
@@ -32,7 +35,7 @@ title.pack()
 
 # Create a function that opens the launcher settings
 def openSettings():
-    os.system("python3 settings.py")
+    os.system("py settings.py")
 
 # Create a button for the launcher settings
 settingsButton = tk.Button(
@@ -50,7 +53,7 @@ settingsButton.place(x = 853, y = 151)
 
 # Create a function that opens the multiplayer window
 def Multiplayer():
-    os.system("python3 multiplayer.py")
+    os.system("py multiplayer.py")
 
 # Create a button that opens the multiplayer window
 multiplayerButton = tk.Button(
@@ -66,7 +69,7 @@ multiplayerButton = tk.Button(
 multiplayerButton.place(x = 853, y = 239)
 
 def News():
-    os.system("python3 news.py")
+    os.system("py news.py")
 
 newsButton = tk.Button(
     text = "NEWS",
@@ -95,7 +98,7 @@ webButton = tk.Button(
 )
 webButton.place(x = 853, y = 327)
 
-selectedVersion = "python3 versions/1.0/game.py"
+selectedVersion = "py versions/1.0/game.py"
 
 def playVersion():
     os.system(selectedVersion)
