@@ -11,7 +11,6 @@ import os
 # Set up the window
 multiplayerWindow = tk.Tk()
 multiplayerWindow.title("PyCraft Launcher")
-multiplayerWindow.iconbitmap("assets/icon.ico")
 multiplayerWindow.geometry("1000x900")
 multiplayerWindow.resizable(0,0)
 multiplayerWindow.configure(bg = "gray30")
