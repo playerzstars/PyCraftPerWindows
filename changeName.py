@@ -7,7 +7,6 @@ import os
 # Set up the window
 changeNameWindow = tk.Tk()
 changeNameWindow.title("Change name")
-changeNameWindow.iconbitmap("assets/icon.ico")
 changeNameWindow.geometry("1000x500")
 changeNameWindow.resizable(0,0)
 changeNameWindow.configure(bg = "gray30")
