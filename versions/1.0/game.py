@@ -76,9 +76,8 @@ class Voxel(Button):
 #    )
 
 for z in range(16):
-    for y in range(10):
-        for x in range(16):
-            voxel = Voxel(position = (x, y - 1, z))
+    for x in range(16):
+    voxel = Voxel(position = (x, y - 1, z))
 
 player.y += 8
 
