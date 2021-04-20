@@ -7,7 +7,6 @@ grassBlock  = "assets/grass.png"
 dirtBlock   = "assets/dirt.png"
 stoneBlock  = "assets/stone.png"
 diamondOre  = "assets/diamond_ore.png"
-zachBlock   = "assets/zach.jpg"
 pythonBlock = "assets/python.png"
 
 blockPick = grassBlock
@@ -21,7 +20,6 @@ player = FirstPersonController(
     )
 
 def update():
-    print(player.y)
     if player.x > 15:
         player.x = 15
     if player.x < 0:
@@ -30,8 +28,6 @@ def update():
         player.z = 15
     if player.z < 0:
         player.z = 0
-    if player.y < -1:
-        player.y = -2
     
     global blockPick
     
@@ -77,7 +73,7 @@ class Voxel(Button):
 
 for z in range(16):
     for x in range(16):
-    voxel = Voxel(position = (x, y - 1, z))
+        voxel = Voxel(position = (x, 0, z))
 
 player.y += 8
 
